@@ -368,6 +368,7 @@ body {
     background: transparent;
     color: var(--text-primary);
     border: 1px solid var(--border);
+    border-color: #0F0F0F;
 }
 
 /* Sections */

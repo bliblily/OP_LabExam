@@ -1,5 +1,3 @@
-import type { Config } from "tailwindcss";
-
 export default {
   darkMode: ["class"],
   content: ["./pages/**/*.{ts,tsx}", "./components/**/*.{ts,tsx}", "./app/**/*.{ts,tsx}", "./src/**/*.{ts,tsx}"],
@@ -13,6 +11,10 @@ export default {
       },
     },
     extend: {
+      fontFamily: {
+        sans: ['Inter', 'system-ui', '-apple-system', 'sans-serif'],
+        serif: ['Playfair Display', 'Georgia', 'serif'],
+      },
       colors: {
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
@@ -22,6 +24,8 @@ export default {
         primary: {
           DEFAULT: "hsl(var(--primary))",
           foreground: "hsl(var(--primary-foreground))",
+          light: "hsl(var(--primary-light))",
+          dark: "hsl(var(--primary-dark))",
         },
         secondary: {
           DEFAULT: "hsl(var(--secondary))",
@@ -38,6 +42,8 @@ export default {
         accent: {
           DEFAULT: "hsl(var(--accent))",
           foreground: "hsl(var(--accent-foreground))",
+          light: "hsl(var(--accent-light))",
+          dark: "hsl(var(--accent-dark))",
         },
         popover: {
           DEFAULT: "hsl(var(--popover))",
@@ -47,11 +53,13 @@ export default {
           DEFAULT: "hsl(var(--card))",
           foreground: "hsl(var(--card-foreground))",
         },
-        // UM Custom Colors
+        // Enhanced UM Brand Colors
         'um-red': "hsl(var(--um-red))",
         'um-yellow': "hsl(var(--um-yellow))",
         'um-red-light': "hsl(var(--um-red-light))",
         'um-yellow-light': "hsl(var(--um-yellow-light))",
+        'um-red-dark': "hsl(var(--um-red-dark))",
+        'um-yellow-dark': "hsl(var(--um-yellow-dark))",
         sidebar: {
           DEFAULT: "hsl(var(--sidebar-background))",
           foreground: "hsl(var(--sidebar-foreground))",
@@ -72,11 +80,16 @@ export default {
         'gradient-hero': 'var(--gradient-hero)',
         'gradient-card': 'var(--gradient-card)',
         'gradient-accent': 'var(--gradient-accent)',
+        'gradient-subtle': 'var(--gradient-subtle)',
+        'gradient-button': 'var(--gradient-button)',
+        'gradient-accent-button': 'var(--gradient-accent-button)',
       },
       boxShadow: {
         'elegant': 'var(--shadow-elegant)',
-        'card-shadow': 'var(--shadow-card)',
+        'card': 'var(--shadow-card)',
         'glow': 'var(--shadow-glow)',
+        'button': 'var(--shadow-button)',
+        'soft': 'var(--shadow-soft)',
       },
       transitionTimingFunction: {
         'smooth': 'var(--transition-smooth)',
@@ -118,3 +131,4 @@ export default {
   },
   plugins: [require("tailwindcss-animate")],
 } satisfies Config;
+                                                                                                                                                                                                                                                                                                                                                            

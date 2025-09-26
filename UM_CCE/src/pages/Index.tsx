@@ -45,15 +45,15 @@ const Index = () => {
                 Empowering the next generation of tech innovators through cutting-edge computing education and hands-on learning experiences.
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
-                <Button asChild size="lg" variant="secondary" className="group">
-                  <Link to="/register" className="flex items-center">
-                    Join CCE Today
-                    <ChevronRight className="ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform" />
-                  </Link>
-                </Button>
-                <Button asChild size="lg" variant="outline" className="text-white border-white hover:bg-white hover:text-primary">
-                  <Link to="/login">Student Portal</Link>
-                </Button>
+              <Button asChild size="lg" variant="gradient" className="group">
+                <Link to="/register" className="flex items-center">
+                  Join CCE Today
+                  <ChevronRight className="ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform" />
+                </Link>
+              </Button>
+              <Button asChild size="lg" variant="outline" className="text-white border-white/30 bg-white/10 hover:bg-white/20 hover:text-white">
+                <Link to="/login">Student Portal</Link>
+              </Button>
               </div>
             </div>
             <div className="animate-fade-in" style={{ animationDelay: "0.3s" }}>
@@ -80,36 +80,36 @@ const Index = () => {
           </div>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-            <Card className="shadow-card-shadow hover:shadow-elegant transition-shadow animate-fade-in group" style={{ animationDelay: "0.1s" }}>
+            <Card className="shadow-card hover:shadow-elegant transition-all duration-300 animate-fade-in group border-0 bg-card/80 backdrop-blur-sm" style={{ animationDelay: "0.1s" }}>
               <CardHeader>
-                <div className="w-12 h-12 bg-gradient-hero rounded-lg flex items-center justify-center mb-4 group-hover:shadow-glow transition-shadow">
+                <div className="w-12 h-12 bg-gradient-hero rounded-xl flex items-center justify-center mb-4 group-hover:shadow-glow transition-all duration-300">
                   <Target className="w-6 h-6 text-white" />
                 </div>
-                <CardTitle>Industry-Focused Curriculum</CardTitle>
+                <CardTitle className="font-serif">Industry-Focused Curriculum</CardTitle>
                 <CardDescription>
                   Our programs are designed with input from industry leaders to ensure graduates are job-ready.
                 </CardDescription>
               </CardHeader>
             </Card>
 
-            <Card className="shadow-card-shadow hover:shadow-elegant transition-shadow animate-fade-in group" style={{ animationDelay: "0.2s" }}>
+            <Card className="shadow-card hover:shadow-elegant transition-all duration-300 animate-fade-in group border-0 bg-card/80 backdrop-blur-sm" style={{ animationDelay: "0.2s" }}>
               <CardHeader>
-                <div className="w-12 h-12 bg-gradient-hero rounded-lg flex items-center justify-center mb-4 group-hover:shadow-glow transition-shadow">
+                <div className="w-12 h-12 bg-gradient-hero rounded-xl flex items-center justify-center mb-4 group-hover:shadow-glow transition-all duration-300">
                   <Zap className="w-6 h-6 text-white" />
                 </div>
-                <CardTitle>Cutting-Edge Technology</CardTitle>
+                <CardTitle className="font-serif">Cutting-Edge Technology</CardTitle>
                 <CardDescription>
                   Access to latest software, hardware, and development tools to enhance your learning experience.
                 </CardDescription>
               </CardHeader>
             </Card>
 
-            <Card className="shadow-card-shadow hover:shadow-elegant transition-shadow animate-fade-in group" style={{ animationDelay: "0.3s" }}>
+            <Card className="shadow-card hover:shadow-elegant transition-all duration-300 animate-fade-in group border-0 bg-card/80 backdrop-blur-sm" style={{ animationDelay: "0.3s" }}>
               <CardHeader>
-                <div className="w-12 h-12 bg-gradient-hero rounded-lg flex items-center justify-center mb-4 group-hover:shadow-glow transition-shadow">
+                <div className="w-12 h-12 bg-gradient-hero rounded-xl flex items-center justify-center mb-4 group-hover:shadow-glow transition-all duration-300">
                   <Lightbulb className="w-6 h-6 text-white" />
                 </div>
-                <CardTitle>Innovation & Research</CardTitle>
+                <CardTitle className="font-serif">Innovation & Research</CardTitle>
                 <CardDescription>
                   Participate in cutting-edge research projects and develop innovative solutions to real-world problems.
                 </CardDescription>
@@ -205,33 +205,33 @@ const Index = () => {
           </div>
 
           <div className="grid lg:grid-cols-2 gap-12 items-center">
-            <div className="animate-fade-in" style={{ animationDelay: "0.2s" }}>
-              <div className="grid grid-cols-2 gap-6">
-                <Card className="text-center p-6 shadow-card-shadow hover:shadow-elegant transition-shadow">
-                  <Trophy className="w-8 h-8 text-primary mx-auto mb-4" />
-                  <h3 className="text-2xl font-bold text-primary mb-2">95%</h3>
-                  <p className="text-sm text-muted-foreground">Job Placement Rate</p>
-                </Card>
-                
-                <Card className="text-center p-6 shadow-card-shadow hover:shadow-elegant transition-shadow">
-                  <Award className="w-8 h-8 text-accent mx-auto mb-4" />
-                  <h3 className="text-2xl font-bold text-accent mb-2">50+</h3>
-                  <p className="text-sm text-muted-foreground">Competition Awards</p>
-                </Card>
-                
-                <Card className="text-center p-6 shadow-card-shadow hover:shadow-elegant transition-shadow">
-                  <Users className="w-8 h-8 text-primary mx-auto mb-4" />
-                  <h3 className="text-2xl font-bold text-primary mb-2">1200+</h3>
-                  <p className="text-sm text-muted-foreground">Active Students</p>
-                </Card>
-                
-                <Card className="text-center p-6 shadow-card-shadow hover:shadow-elegant transition-shadow">
-                  <BookOpen className="w-8 h-8 text-accent mx-auto mb-4" />
-                  <h3 className="text-2xl font-bold text-accent mb-2">30+</h3>
-                  <p className="text-sm text-muted-foreground">Industry Partners</p>
-                </Card>
+              <div className="animate-fade-in" style={{ animationDelay: "0.2s" }}>
+                <div className="grid grid-cols-2 gap-6">
+                  <Card className="text-center p-6 shadow-card hover:shadow-elegant transition-all duration-300 border-0 bg-card/80 backdrop-blur-sm group">
+                    <Trophy className="w-8 h-8 text-primary mx-auto mb-4 group-hover:scale-110 transition-transform" />
+                    <h3 className="text-3xl font-bold text-primary mb-2 font-serif">95%</h3>
+                    <p className="text-sm text-muted-foreground">Job Placement Rate</p>
+                  </Card>
+                  
+                  <Card className="text-center p-6 shadow-card hover:shadow-elegant transition-all duration-300 border-0 bg-card/80 backdrop-blur-sm group">
+                    <Award className="w-8 h-8 text-accent mx-auto mb-4 group-hover:scale-110 transition-transform" />
+                    <h3 className="text-3xl font-bold text-accent mb-2 font-serif">50+</h3>
+                    <p className="text-sm text-muted-foreground">Competition Awards</p>
+                  </Card>
+                  
+                  <Card className="text-center p-6 shadow-card hover:shadow-elegant transition-all duration-300 border-0 bg-card/80 backdrop-blur-sm group">
+                    <Users className="w-8 h-8 text-primary mx-auto mb-4 group-hover:scale-110 transition-transform" />
+                    <h3 className="text-3xl font-bold text-primary mb-2 font-serif">1200+</h3>
+                    <p className="text-sm text-muted-foreground">Active Students</p>
+                  </Card>
+                  
+                  <Card className="text-center p-6 shadow-card hover:shadow-elegant transition-all duration-300 border-0 bg-card/80 backdrop-blur-sm group">
+                    <BookOpen className="w-8 h-8 text-accent mx-auto mb-4 group-hover:scale-110 transition-transform" />
+                    <h3 className="text-3xl font-bold text-accent mb-2 font-serif">30+</h3>
+                    <p className="text-sm text-muted-foreground">Industry Partners</p>
+                  </Card>
+                </div>
               </div>
-            </div>
             <div className="animate-fade-in">
               <img 
                 src={programmingConcept} 
@@ -252,13 +252,13 @@ const Index = () => {
               Join the University of Mindanao College of Computing Education and transform your passion for technology into a successful career.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button asChild size="lg" variant="secondary" className="group">
+              <Button asChild size="lg" variant="premium" className="group">
                 <Link to="/register" className="flex items-center">
                   Apply Now
                   <ChevronRight className="ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform" />
                 </Link>
               </Button>
-              <Button asChild size="lg" variant="outline" className="text-white border-white hover:bg-white hover:text-primary">
+              <Button asChild size="lg" variant="outline" className="text-white border-white/30 bg-white/10 hover:bg-white/20 hover:text-white">
                 <Link to="/login">Student Login</Link>
               </Button>
             </div>
